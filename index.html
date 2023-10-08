@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DOM</title>
+</head>
+
+    <body>
+        
+        <div>
+            <h1>Programming Languages</h1>
+            <p>These are some programming languages:</p>
+            <ul class="list">
+                <li>JavaScript</li>
+                <p>We can create interactive Website using JavaScript</p>
+                <li>Kotlin</li>
+                <p>We can devolop Android apps using Kotlin</p>
+                <li>Swift</li>
+                <p>We can devolop iOS apps using Swift</p>
+            </ul>
+        </div>
+
+        <h3>Clicks: <span id="clicks"></span></h3>
+
+        <button type="button" onClick="add()"">+</button>
+
+        <script>
+
+            let clicks = 0;
+            function add() {
+                clicks++;
+                document.getElementById("clicks").innerText = clicks
+            };
+
+            
+            let android = document.querySelectorAll("li")[1]
+            android.style.color = "blue"
+
+            /*
+            let languageList = document.querySelector(".list")
+            let ios = document.querySelectorAll("li")[2]
+            ios.remove()
+            */
+
+            let ruby = document.createElement("li")
+            ruby.innerText = "Ruby"
+            languageList.append(ruby)
+            
+            </script>
+
+    </body>
+
+</html>
